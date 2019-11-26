@@ -1,6 +1,6 @@
 FROM backstopjs/backstopjs:stable
 RUN apt-get -qqy update \
-  && apt-get update
+  && apt-get update \
   && apt-get -qqy --no-install-recommends install \
     apt-transport-https \
     ca-certificates \
