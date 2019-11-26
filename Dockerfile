@@ -10,6 +10,6 @@ RUN apt-get -qqy update \
   && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - \
   && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \
   && apt-get update \
-  && apt-get install docker-ce docker-ce-cli \
+  && apt-get -qqy install docker-ce docker-ce-cli \
   && rm -rf /var/lib/apt/lists/* \
   && apt-get -qyy clean;
