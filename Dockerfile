@@ -1,4 +1,4 @@
-FROM backstopjs/backstopjs:stable
+FROM backstopjs/backstopjs:4.3.4
 RUN apt-get -qqy update \
   && apt-get update \
   && apt-get -qqy --no-install-recommends install \
